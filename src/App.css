@@ -1,4 +1,4 @@
-.body{
+.body {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6,7 +6,7 @@
 .body>div {
   align-self: center;
  }
-.container{
+.container {
   height: 500px;
   width: 800px;
   background-image:url(city.png);
@@ -18,10 +18,10 @@
   align-items: center;
   justify-content: center;
 }
-.container>div{
+.container>div {
   align-self: center;
 }
-.form{
+.form {
   background-color:MediumPurple;
   background-image: linear-gradient(MidnightBlue , MediumVioletRed);
   border-radius: 10px;
@@ -30,7 +30,7 @@
   align-items: center;
   width: 114%;
 }
-.forming{
+.forming {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -43,7 +43,7 @@
   margin-top: 50px;
   margin-bottom: 20px;
 }
-.user-icon{
+.user-icon {
   display: flex;
   flex-direction: row;
   margin:20px;
@@ -54,7 +54,7 @@
   border-bottom:1px solid white;
   padding: 5px;
 }
-.pass-icon{
+.pass-icon {
   display:flex;
   flex-direction: row;
   margin: 20px;
@@ -78,16 +78,16 @@
   padding: 10px 10px 20px;
   margin: 11px;
 }
-.forget-pass{
+.forget-pass {
   display: flex;
   justify-content:center; 
 }
-.logindiv{
+.logindiv {
  display: flex;
  justify-content: center;
   align-self: center;
 }
-.login{
+.login {
  text-align: center;
   width: 60px;
   text-decoration: none;
@@ -98,30 +98,30 @@
   border-radius: 20px;
 
 }
-.no-account{
+.no-account {
   font-size: 0.75em;
   font-family:Arial, Helvetica, serif;
   display: flex;
   justify-content: center;
   margin-top: 10%;
 }
-.sign-up{
+.sign-up {
   text-decoration: none;
   color: #fff;
 }
 
-.email-icon{
+.email-icon {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   margin:4%; 
 }
-.email{
+.email {
   background-color: inherit;
   border:none;
   border-bottom:1px solid white;
 }
-.signing{
+.signing {
   text-align: center;
   width: 60px;
   text-decoration: none;
@@ -130,4 +130,74 @@
   padding: 10px;
   border-radius: 20px;
   margin: 15%;
+}
+.chat-body{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.chat {
+  height: 100vh;
+  width: 100%;
+  background-color:#fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.conversation-list {
+  background-color: bisque;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border: solid blueviolet;
+    border-radius: 1%;
+    border-right:none;
+}
+.chat-screen {
+  background-image:url(city.png);
+  background-size:cover;
+  flex-grow: 8;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: solid blueviolet;
+  border-radius: 1%;
+}
+.conversation-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid;
+}
+.conversation-bar img {
+  width: 48px;
+}
+.conversation-bar>div {
+  flex-grow: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  
+}
+.name-date{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 5%;
+}
+.header {
+  background-color: #fff;
+  border-bottom: 1px solid;
+  flex-grow: 1;
+}
+.bubble {
+  flex-grow: 20;
+}
+.typing {
+  background-color: #fff;
+  flex-grow: 1;
+  border-top: 1px solid;
 }
