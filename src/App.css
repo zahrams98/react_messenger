@@ -1,33 +1,133 @@
-.App {
-  text-align: center;
+.body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.body>div {
+  align-self: center;
+ }
+.container{
+  height: 500px;
+  width: 800px;
+  background-image:url(city.png);
+  background-size: cover;
+  margin: auto;
+  border-radius:10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.container>div{
+  align-self: center;
+}
+.form{
+  background-color:MediumPurple;
+  background-image: linear-gradient(MidnightBlue , MediumVioletRed);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 114%;
+}
+.forming{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title {
+  text-align: center;
   color: white;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.user-icon{
+  display: flex;
+  flex-direction: row;
+  margin:20px;
+}
+.username {
+  background-color: inherit;
+  border:none;
+  border-bottom:1px solid white;
+  padding: 5px;
+}
+.pass-icon{
+  display:flex;
+  flex-direction: row;
+  margin: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.password {
+  background-color: inherit;
+  border:none;
+  border-bottom:1px solid white;
+  padding: 5px;
+}
+.material-icons {
+  color: azure;
+  font-size: 1.5em;
+  margin-top: 10px;
+}
+.rememberme {
+  color: #fff;
+  margin: 5px;
+  font-family:Arial, Helvetica, sans-serif;
+  padding: 10px 10px 20px;
+  margin: 11px;
+}
+.forget-pass{
+  display: flex;
+  justify-content:center; 
+}
+.logindiv{
+ display: flex;
+ justify-content: center;
+  align-self: center;
+}
+.login{
+ text-align: center;
+  width: 60px;
+  text-decoration: none;
+  font-family:Arial, Helvetica, sans-serif;
+
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 20px;
+
+}
+.no-account{
+  font-size: 0.75em;
+  font-family:Arial, Helvetica, serif;
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+}
+.sign-up{
+  text-decoration: none;
+  color: #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.email-icon{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin:4%; 
+}
+.email{
+  background-color: inherit;
+  border:none;
+  border-bottom:1px solid white;
+}
+.signing{
+  text-align: center;
+  width: 60px;
+  text-decoration: none;
+  font-family:Arial, Helvetica, sans-serif;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 20px;
+  margin: 15%;
 }
