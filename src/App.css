@@ -17,12 +17,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  border: 1px solid rgb(224, 222, 222);
+  padding: 10px;
+  box-shadow: 5px 10px 18px #888888;
 }
 .container>div {
   align-self: center;
 }
 .form {
-  background-color:MediumPurple;
   background-image: linear-gradient(MidnightBlue , MediumVioletRed);
   border-radius: 10px;
   display: flex;
@@ -37,7 +39,8 @@
 }
 .title {
   text-align: center;
-  color: white;
+  color: #fff;
+  font-weight: bold;
   font-family:Arial, Helvetica, sans-serif;
   font-size: 1em;
   margin-top: 50px;
@@ -49,10 +52,12 @@
   margin:20px;
 }
 .username {
+  color: #fff;
   background-color: inherit;
   border:none;
   border-bottom:1px solid white;
   padding: 5px;
+  outline:none; 
 }
 .pass-icon {
   display:flex;
@@ -61,10 +66,12 @@
 }
 
 .password {
+  color: #fff;
   background-color: inherit;
   border:none;
   border-bottom:1px solid white;
   padding: 5px;
+  outline:none; 
 }
 .material-icons {
   color: azure;
@@ -73,9 +80,7 @@
 }
 .rememberme {
   color: #fff;
-  margin: 5px;
-  font-family:Arial, Helvetica, sans-serif;
-  padding: 10px 10px 20px;
+ padding: 10px 10px 20px;
   margin: 11px;
 }
 .forget-pass {
@@ -88,16 +93,24 @@
   align-self: center;
 }
 .login {
- text-align: center;
-  width: 60px;
-  text-decoration: none;
-  font-family:Arial, Helvetica, sans-serif;
-
-  background-color: #fff;
-  padding: 10px;
-  border-radius: 20px;
-
+ font-weight: bold;
+ outline: none;
+ color: blueviolet;
+ cursor: pointer;
+ width: 80px;
+ font-size: 1em;
+ font-family:Arial, Helvetica, sans-serif;
+ background-color: #fff;
+ border: none;
+ padding: 10px;
+ border-radius: 20px;
 }
+.errors {
+  font-size: 0.75em;
+  color: coral;
+  font-weight: bold;
+}
+.login:hover {background-color: inherit ; color:#fff}
 .no-account {
   font-size: 0.75em;
   font-family:Arial, Helvetica, serif;
@@ -108,6 +121,7 @@
 .sign-up {
   text-decoration: none;
   color: #fff;
+  font-family:Arial, Helvetica, sans-serif;
 }
 
 .email-icon {
@@ -118,19 +132,28 @@
 }
 .email {
   background-color: inherit;
+  outline: none;
   border:none;
+  color: #fff;
   border-bottom:1px solid white;
 }
 .signing {
   text-align: center;
-  width: 60px;
+  cursor: pointer;
+  width: 75px;
+  font-size: 1em;
   text-decoration: none;
   font-family:Arial, Helvetica, sans-serif;
   background-color: #fff;
   padding: 10px;
+  border: none;
+  outline: none;
   border-radius: 20px;
   margin: 15%;
+  color: blueviolet;
+ font-weight: bold;
 }
+.signing:hover {background-color: inherit;color:#fff}
 .chat-body{
   display: flex;
   flex-direction: row;
@@ -138,39 +161,55 @@
   align-items: center;
 }
 .chat {
-  height: 100vh;
+  height: 90vh;
   width: 100%;
   background-color:#fff;
   display: flex;
   justify-content: space-between;
-  align-items: stretch;
+  padding: 4px 0px 0px ;
 }
 .conversation-list {
-  background-color: bisque;
+  background-color: #fff;
   flex-grow: 1;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  border: solid blueviolet;
-    border-radius: 1%;
-    border-right:none;
+  border: none;
+  border-right: solid #fff;
+  overflow: auto;
+}
+.searching {
+  background-color: coral;
+  flex-direction: column;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.search-input{
+  border: none;
+  padding: 10px;
+  font-size: 1em;
+  background-color: inherit;
 }
 .chat-screen {
-  background-image:url(city.png);
+  background-color: bisque;
   background-size:cover;
-  flex-grow: 8;
+  flex-grow: 7;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: solid blueviolet;
+  border: none;
   border-radius: 1%;
 }
 .conversation-bar {
+  cursor: pointer;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid;
+  border-bottom: 1px solid #888888;
 }
 .conversation-bar img {
   width: 48px;
@@ -190,14 +229,59 @@
 }
 .header {
   background-color: #fff;
-  border-bottom: 1px solid;
+  border-bottom: 1px solid #888888;
   flex-grow: 1;
+  height: 11%;
+  display: flex;
+  flex-direction: row;
 }
+.header img{
+  flex-grow: 0.01;
+  width:10% ;
+}
+.headername{
+  align-self: center;
+}  
 .bubble {
-  flex-grow: 20;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 100;
 }
 .typing {
   background-color: #fff;
   flex-grow: 1;
-  border-top: 1px solid;
+  border-top: 1px solid #888888;
+  height: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end
+  }
+.type{
+  width: 90%;
+  border: none;
+  margin-right: 1% ;
+  outline:none; 
+  font-size: 1em;
+}
+.typing img{
+  width: 4%;
+  margin-right: 3%;
+}
+.send {
+  align-self: center;
+  cursor: pointer;
+}
+.reciever {
+  align-self: flex-start;
+  background-color: coral;
+  padding: 5px;
+  margin: 2px 2px 0px 0px;
+  border-radius: 10px 10px 10px 1px;
+}
+.sender {
+  align-self: flex-end;
+  background-color: coral;
+  padding: 5px;
+  margin: 15px 0px 2px 2px;
+  border-radius: 10px 10px 1px 10px;
 }
