@@ -2,7 +2,7 @@ const initial = {
   email: '',
   id: '',
   messagesList: [],
-  conversationList: [],
+  conversationList: []
 }
 const conversationbar = (state = initial, action) => {
   switch (action.type) {

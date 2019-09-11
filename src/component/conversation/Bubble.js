@@ -4,9 +4,9 @@ export default class Bubble extends React.Component {
   constructor () {
     super()
     this.state = {
-      id:window.localStorage.getItem('id')
+      id: window.localStorage.getItem('id')
     }
-  } 
+  }
 
   render () {
     console.log('pp', this.props.messagesList)

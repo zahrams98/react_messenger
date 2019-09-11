@@ -40,7 +40,7 @@ export default class Typing extends React.Component {
           style={{ fontSize: '13px',
             border: 'none',
             borderRadius: '50%',
-            backgroundColor: 'coral',
+            backgroundColor: 'rgb(107, 84, 129)',
             outline: 'none',
             marginTop: '20px',
             marginRight: '5px'

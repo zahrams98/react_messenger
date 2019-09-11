@@ -1,7 +1,7 @@
 import React from 'react'
 import ConversationBarContainer from '../../container/ConversationBarContainer'
 import axios from 'axios'
-import { listedConversation, suggested } from '../../action/ConversationBar'
+import { listedConversation } from '../../action/ConversationBar'
 
 export default class ConversationList extends React.Component {
   constructor () {
@@ -69,7 +69,7 @@ export default class ConversationList extends React.Component {
         </div>
         {this.state.suggestionUsers.map((user) => {
           return (
-            <p key={user.id}
+            <p  className='search-done' key={user.id}
               onClick={() => this.openChat(user.id)}
             >
               {user.email}
@@ -80,7 +80,7 @@ export default class ConversationList extends React.Component {
         { this.props.conversationList.map((item, index) => {
           return (
             item.users.map((user) => {
-              if (user.id !== this.state.id) {
+              if (user.id != this.state.id) {
                 return (
                   <ConversationBarContainer
                     key={index}

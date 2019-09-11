@@ -8,4 +8,4 @@ const mapDispatchToProps = (dispatch) => ({
   dispatch: dispatch
 })
 
-export default connect(mapStateToProps , mapDispatchToProps)(Typing)
+export default connect(mapStateToProps, mapDispatchToProps)(Typing)

@@ -26,7 +26,7 @@ export default class ConversationBar extends React.Component {
       .catch(function (error) {
         console.log(error)
       })
-  } 
+  }
 
   render () {
     console.log('propsha', this.props.conversation_id)
@@ -36,7 +36,7 @@ export default class ConversationBar extends React.Component {
         <div>
           <div className='name-date'>
             <span> {this.props.email}</span>
-            <span> {this.props.latestMessageDate}
+            <span> {this.props.latestMessageDate.slice(11,16)}
             </span>
           </div>
           <div className='name-date'>

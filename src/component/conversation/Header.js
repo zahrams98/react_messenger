@@ -5,7 +5,7 @@ export default class Header extends React.Component {
     return (
       <div className='header'>
         <span className='headername'>
-          {this.props.email} {this.props.id}
+          {this.props.email}
         </span>
       </div>
     )
