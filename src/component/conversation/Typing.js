@@ -29,7 +29,7 @@ export default class Typing extends React.Component {
   render () {
     return (
       <div className='typing'>
-        <input placeholder='message ...'
+        <input placeholder='  message ...'
           value={this.state.newMassage}
           className='type'
           name='newMassage'
@@ -37,15 +37,15 @@ export default class Typing extends React.Component {
         />
         <button className='send'
           onClick={() => this.handleMessage()}
-          style={{ fontSize: '13px',
+          style={{ fontSize: '12px',
             border: 'none',
-            borderRadius: '50%',
+            marginTop: '1%',
+            borderRadius: '5vh',
             backgroundColor: 'rgb(107, 84, 129)',
-            outline: 'none',
-            marginTop: '20px',
-            marginRight: '5px'
+            outline: 'none'
           }}>
-          <i className='material-icons'>send</i>
+          <i className='material-icons'
+          >send</i>
         </button>
       </div>
     )

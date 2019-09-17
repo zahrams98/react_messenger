@@ -261,18 +261,19 @@
   height: 5%;
   display: flex;
   flex-direction: row;
-  justify-content: flex-end
+  justify-content: center;
   }
 .type{
   width: 90%;
-  border: none;
-  margin-right: 1% ;
+  background-color: #fff;
+  height: 75%;
+  border:2px solid rgb(107, 84, 129);
+  border-radius: 5vh;
+  align-self: center;
+  margin-top: 1%;
+  margin-right: 1%;
   outline:none; 
   font-size: 1em;
-}
-.typing img{
-  width: 4%;
-  margin-right: 3%;
 }
 .send {
   align-self: center;
